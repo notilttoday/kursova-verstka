@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/general-assets/fs-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style-content.css">
+    <title>Figures Shop</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/general-assets/logo.png" alt="LogoFiguresShop"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Магазин</a></li>
+                <li><a href="about-us.html">Про нас</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="search-and-filters">
+            <input type="text" class="search-bar" placeholder="Шукати фігурки...">
+            <button class="filter-button"><img src="/assets/general-assets/filter.png" alt="filter"></button>
+        </div>
+        <div class="icons">
+            <div class="cart-dropdown">
+                <button class="CartID">
+                    <img src="assets/assets-svg/cart.svg" alt="cartIcon">
+                    <div class="cart-quantity">
+                        0
+                    </div>
+                </button>
+            </div>
+            <div class="profile-dropdown">
+                <button class="Profile">
+                    <img src="assets/assets-svg/profile.svg" alt="profileIcon">
+                </button>
+                <ul class="dropdown-list">
+                    <li><a href="">Мій профіль</a></li>
+                    <li><a href="">Історія покупок</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contact">
+            <h1>Наші контакти</h1>
+            <div class="our-contacts">
+                <div class="contact-box">
+                    <img src="assets/assets-svg/telephone.svg" alt="phone-icon">
+                    <div class="contact-info">
+                        <a href="tel: +380681239812">+380 (68) 123-98-12</a>
+                        <a href="tel: +380689873421">+380 (68) 987-34-21</a>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img src="assets/assets-svg/mail.svg" alt="mail-icon">
+                    <div class="contact-info">
+                        <a href="mailto:figures-shop@gmail.com">figures-shop@gmail.com</a>
+                        <a href="mailto:figures-shop@ukr.net">figures-shop@ukr.net</a>
+                    </div>
+                </div>
+            </div>
+            <div class="send-message">
+                <h2>Залишити повідомлення</h2>
+                <div class="send-message-box">
+                    <form action="" method="post">
+                        <label for="first-name">Ім'я:</label>
+                        <input type="text" id="first-name" name="first-name" maxlength="20" placeholder="Ім'я" required>
+
+                        <label for="last-name">Прізвище:</label>
+                        <input type="text" id="last-name" name="last-name" maxlength="20"  placeholder="Прізвище" required>
+
+                        <label for="email">Адреса електронної пошти:</label>
+                        <input type="email" id="email" name="email" maxlength="35" placeholder="example@gmail.com" required>
+
+                        <label for="message">Повідомлення:</label>
+                        <textarea type="message" name="message" rows="5" cols="40" maxlength="400" placeholder="Введіть повідомлення..." required></textarea>
+
+                        <input type="submit" name="submit-button" id="submit-button" value="Надіслати">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="top-footer">
+            <div class="delivery-graphic">
+                <p>Графік доставки</p>
+                <div class="graphic">
+                    <p>Будні: 09:00 - 19:00</p>
+                    <p>Вихідні: 10:00 - 13:00</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <p>Наші соціальні мережі</p>
+                <div>
+                    <a href="#" class="instagram">
+                        <img src="/assets/general-assets/instagram.webp" alt="instagram-icon">
+                        <p>Наш instagram</p>
+                    </a>
+                    <a href="#" class="telegram">
+                        <img src="/assets/general-assets/telegram.png" alt="telegram-icon">
+                        <p>Наш telegram</p>
+                    </a>
+                    <a href="#" class="twitter-x">
+                        <img src="/assets/general-assets/twitter-x.png" alt="twitter-x-icon">
+                        <p>Наш X</p>
+                    </a>
+                    <a href="#" class="facebook">
+                        <img src="/assets/general-assets/facebook.png" alt="facebook">
+                        <p>Наш facebook</p>
+                    </a>
+                </div>
+            </div>
+            <div class="more-info">
+                <p>Більше інформації</p>
+                <div class="footer-info">
+                    <a href="">Мій профіль</a>
+                    <a href="">Контакти</a>
+                    <a href="">Про нас</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            © Figures Shop 2024
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>

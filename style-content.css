@@ -244,6 +244,30 @@ a {
     height: 45px;
     margin-bottom: 24px;
 }
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column-1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+}
+
+.form-column-2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+}
+
+.send-message-box input:focus {
+    outline: 1px solid #a6a6a6;
+}
+
 .send-message-box textarea{
     font-size: 20px;
     padding: 15px;
@@ -252,13 +276,33 @@ a {
     max-width: 800px;
     height: 150px;
 }
+.send-message-box textarea:focus {
+    outline: 1px solid #a6a6a6;
+}
 .send-message-box label{
     font-size: 20px;
     color: #303030;
     margin-bottom: 8px;
 }
+.send-message-box label:last-child {
+    text-align: center;
+}
 .send-message-box form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 20px;
+}
+.send-message-box form button{
+    width: 250px;
+    height: 45px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #3dd442;
+    margin: 20px auto 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.send-message-box form button:hover{
+    background-color: #00b006;
 }

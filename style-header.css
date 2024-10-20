@@ -61,6 +61,18 @@ nav ul li a:hover{
     background-color: #a6a6a6;
 }
 
+.CartID a {
+    padding: 0;
+}
+.CartID img {
+    width: 50px;
+}
+.profile a {
+    padding: 0;
+}
+.profile img {
+    width: 50px;
+}
 .icons {
     display: flex;
     gap: 20px;
@@ -73,6 +85,7 @@ nav ul li a:hover{
     display: flex;
     padding: 0;
     cursor: pointer;
+    background-color: transparent;
 }
 .CartID {
     padding-right: 2px;
@@ -84,7 +97,7 @@ nav ul li a:hover{
     width: 50px;
 }
 
-.profile-dropdown {
+/* .profile-dropdown {
     position: relative;
     display: inline-block;
 }
@@ -120,12 +133,12 @@ nav ul li a:hover{
 }
 .dropdown-list li:hover:last-child {
     border-radius: 0 0 10px 10px;
-}
-.dropdown-list button {
+} */
+/* .dropdown-list button {
     width: 200px;
     height: 30px;
     margin: 0;
-}
+} */
 
 .cart-dropdown {
     position: relative;

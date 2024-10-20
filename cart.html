@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style-header.css">
     <link rel="stylesheet" href="style-footer.css">
     <link rel="stylesheet" href="style-content.css">
+    <link rel="stylesheet" href="style-cart.css">
     <title>Figures Shop</title>
 </head>
 <body>
@@ -42,56 +43,28 @@
         </div>
     </div>
     <div class="content">
-        <div class="contact">
-            <h1>Наші контакти</h1>
-            <div class="our-contacts">
-                <div class="contact-box">
-                    <img src="assets/assets-svg/telephone.svg" alt="phone-icon">
-                    <div class="contact-info">
-                        <a href="tel: +380681239812">+380 (68) 123-98-12</a>
-                        <a href="tel: +380689873421">+380 (68) 987-34-21</a>
-                    </div>
-                </div>
-                <div class="contact-box">
-                    <img src="assets/assets-svg/mail.svg" alt="mail-icon">
-                    <div class="contact-info">
-                        <a href="mailto:figures-shop@gmail.com">figures-shop@gmail.com</a>
-                        <a href="mailto:figures-shop@ukr.net">figures-shop@ukr.net</a>
-                    </div>
-                </div>
-            </div>
-            <div class="send-message">
-                <h2>Залишити повідомлення</h2>
-                <div class="send-message-box">
-                    <form action="" method="post">
-                        <div class="form-row">
-                            <div class="form-column-1">
-                                <label for="first-name">Ім'я:</label>
-                                <input type="text" id="first-name" name="first-name" maxlength="20" placeholder="Ім'я" required>    
-                            </div>
-                            <div class="form-column-2">
-                                <label for="last-name">Прізвище:</label>
-                                <input type="text" id="last-name" name="last-name" maxlength="20"  placeholder="Прізвище" required>
-                            </div>
+       <div class="cart">
+            <ul class="cart-list">
+                <li class="cart-item">
+                    <div class="cart-info">
+                        <img src="/assets/Figures/geralt_figure.jpg" alt="Geralt" class="item-img">
+                        <div class="item-text-info">
+                            <p class="item-name">Geralt of Rivia</p>
+                            <p class="item-desc"> sdfdzsgawegv;iasdsdaowea;ybrtgi4ytg98i34sdfdzsdssgawegv;iowea;ybrtgi4ytg98i34sdfdzsgawegv;iowea;ybrtgi4ytg98i34sdfdzsgawegv;iowea;ybrtgi4ytg98i34sdfdzsgawegv;iowea;ybrtgi4ytg98i34</p>
                         </div>
-                        <div class="form-row">
-                            <div class="form-column-1">
-                                <label for="email">Адреса електронної пошти:</label>
-                                <input type="email" id="email" name="email" maxlength="35" placeholder="example@gmail.com" required>
-                            </div>
-                            <div class="form-column-2">
-                                <label for="phone">Номер телефону:</label>
-                                <input type="tel" id="phone" name="phone" maxlength="15" placeholder="Номер телефону">
-                            </div>
-                        </div>
-                        <label for="message">Повідомлення:</label>
-                        <textarea type="message" name="message" rows="5" cols="40" maxlength="400" placeholder="Введіть повідомлення..." required></textarea>
-
-                        <button type="submit">Надіслати</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+                    </div>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity()"><img src="assets/assets-svg/minus.svg" alt="minus"></button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button onclick="increaseQuantity()"><img src="assets/assets-svg/plus.svg" alt="plus"></button>
+                    </div>
+                    <div class="item-price">
+                        <p class="price"> 1500</p>
+                        <button class="remove-item"><img src="/assets/assets-svg/cross.svg" alt="cross-delete"></button>
+                    </div>
+                </li>
+            </ul>
+       </div>
     </div>
     <div class="footer">
         <div class="top-footer">
